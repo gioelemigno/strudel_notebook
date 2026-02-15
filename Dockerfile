@@ -22,14 +22,14 @@ RUN mkdir -p /etc/ssh \
 # Add sound configuration
 COPY asound.conf /etc/asound.conf
 
-# # install uv
-# RUN curl -LsSf https://astral.sh/uv/install.sh | sh
-# # Optional: Verify UV installation
-# RUN ["/bin/bash", "-c", "source $HOME/.local/bin/env && uv --version"]
+# install uv
+RUN curl -LsSf https://astral.sh/uv/install.sh | sh
+# Optional: Verify UV installation
+RUN ["/bin/bash", "-c", "source $HOME/.local/bin/env && uv --version"]
 
-# install obsidian
-RUN wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.10.6/obsidian_1.10.6_amd64.deb && \
-    apt install ./obsidian_1.10.6_amd64.deb -y 
+# # install obsidian
+# RUN wget https://github.com/obsidianmd/obsidian-releases/releases/download/v1.10.6/obsidian_1.10.6_amd64.deb && \
+#     apt install ./obsidian_1.10.6_amd64.deb -y 
 
 # ENV PYTHONPATH="/workdir:${PYTHONPATH}"
 

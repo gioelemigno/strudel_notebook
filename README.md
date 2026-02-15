@@ -1,5 +1,5 @@
 # strudel_notebook
-Notebook for music made with Strudel REPL using Obsidian
+Notebook for music made with Strudel REPL
 
 I do not know how to play any instrument but I want to make some music, Strudel REPL is a very nice tool to start with so here we are.
 
@@ -9,5 +9,9 @@ Problems (i.e. opportunities to learn)
 
 Solution
 - Create a docker container
-- Install Obsidian
-- Use this Obsidian plugin https://github.com/dudaanton/obsidian-strudel-plugin to arrange music into notes files
+- Use Jupyter Notebook
+
+Inside the container:
+```
+uv run --with jupyter jupyter notebook
+```
