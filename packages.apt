@@ -4,10 +4,3 @@ wget
 curl
 nano
 git
-alsa-utils
-ffmpeg
-pulseaudio 
-pulseaudio-utils
-python3-dev 
-portaudio19-dev
-gedit

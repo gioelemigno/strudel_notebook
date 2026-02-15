@@ -13,5 +13,5 @@ Solution
 
 Inside the container:
 ```
-uv run --with jupyter jupyter notebook
+uv run --with jupyter jupyter notebook --allow-root
 ```
